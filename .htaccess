@@ -1,0 +1,36 @@
+ErrorDocument 404 /404
+ErrorDocument 403 /403
+ErrorDocument 401 /401
+
+Options +FollowSymLinks
+Options -MultiViews
+
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^$ 																		./index.php
+RewriteRule ^changelog\/*(edit)*$													./changelog.php?a=$1
+RewriteRule ^news$ 																	./news.php
+RewriteRule ^blogs$																	./blog.php
+RewriteRule ^cookies$																./mycookies.php
+RewriteRule ^blogs\/*([A-Za-z0-9\-\_]+)*\/*(edit)*\/*$								./showblog.php?b=$1&action=$2
+RewriteRule ^uploadcenter\/*(|upload|gallery|manage)\/*$							./upload.php?w=$1
+RewriteRule ^admin\/*([A-Za-z]*)\/*([A-Za-z0-9\-\_]+)*$								./admin_panel.php?w=$1&u=$2
+RewriteRule ^uploads\/([A-Za-z0-9\-\_]+)*\/*(\d|\D|\w|\W)*+$						./showfile.php?u=$1&f=$2
+RewriteRule ^profile\/*([A-Za-z0-9\-\_]+)*$											./profile.php?u=$1
+RewriteRule ^messages\/*(friendrequest\/*[0-9]+\/*[0-9]+\/*[0-9A-Za-z]+)*$			./messages.php?frq=$1
+RewriteRule ^messages\/*([0-9]+)\/*(reply)*$										./messages.php?m=$1&action=$2
+RewriteRule ^sendmessage\/*([0-9]+)\/*$												./sendmessage.php?u=$1
+RewriteRule ^settings$																./settings.php
+
+RewriteRule ^login$																	./login.php
+RewriteRule ^register$																./register.php
+RewriteRule ^logout$																./logout.php
+
+RewriteRule ^404$																	./404.php
+RewriteRule ^403$																	./403.php
+RewriteRule ^401$																	./401.php
+
+Options All -Indexes

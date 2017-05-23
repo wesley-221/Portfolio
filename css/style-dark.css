@@ -1,0 +1,1035 @@
+/*
+	Default attributes
+*/
+*
+{
+	border-radius: 0 !important;
+}
+
+html
+{
+	height: 100%;
+	max-height: 100%;
+}
+
+body
+{
+	width: auto;
+	height: 100%;
+	background-color: #282C34;
+	color: white;
+
+	padding-top: 70px;
+}
+
+.container
+{
+	height: 100%;
+}
+
+a
+{
+	color: #A9F5F2;
+}
+
+a:hover
+{
+	color: #A9F5F2;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea
+{
+	border-color: black;
+	background-color: #424549;
+	color: white;
+}
+
+input[type="text"]:disabled, input[type="email"]:disabled, input[type="password"]:disabled, input[type="number"]:disabled, textarea:disabled
+{
+	background-color: #5D6682;
+	color: white;
+}
+
+/*
+	Bootstrap overrides
+	Misc
+*/
+.panel-header
+{
+	overflow: hidden;
+	background-color: #1E2124;
+}
+
+.panel-header > a:hover,
+.panel-header > a:focus,
+.panel-header > a:active:focus
+{
+	color: #A9F5F2;
+}
+
+.panel-text
+{
+	background-color: #3D434F;
+}
+
+.spoiler
+{
+	background-color: black;
+	color: black;
+	padding: 3px;
+}
+
+.spoiler:hover
+{
+	color: white;
+	cursor: default;
+}
+
+.row
+{
+	padding-bottom: 9px !important;
+}
+
+.thumbnail
+{
+	background-color: #3D434F;
+	border-color: black;
+}
+
+.thumbnail:hover,
+.thumbnail:focus,
+.thumbnail:active:focus
+{
+	color: yellow;
+	border-color: yellow !important;
+}
+
+.breadcrumb
+{
+	background-color: #282C34;
+}
+
+@media (max-width: 643px) {
+	.smallertext
+	{
+		font-size: 10px;
+	}
+}
+
+/* .nav-tabs */
+.nav-tabs {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.nav-tabs > li > a {
+    background: #1E2124;
+    border-radius: 0;
+    box-shadow: inset 0 -8px 7px -9px rgba(0,0,0,.4),-2px -2px 5px -2px rgba(0,0,0,.4);
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:active:focus
+{
+	cursor: pointer;
+    background: #3D434F;
+	color: white;
+	border: 0;
+    box-shadow: inset 0 0 0 0 rgba(0,0,0,.4),-2px -3px 5px -2px rgba(0,0,0,.4);
+}
+
+.nav-tabs > li > a { color: white; }
+
+.nav-tabs > li > a:hover
+{
+	border: 0;
+	color: white;
+	background: #3D434F;
+	box-shadow: inset 0 0 0 0 rgba(0,0,0,.4),-2px -3px 5px -2px rgba(0,0,0,.4);
+}
+
+/* Tab Content */
+.tab-pane {
+    box-shadow: 0 0 4px rgba(0,0,0,.4);
+    border: 1px solid black;
+    padding: 10px;
+}
+/*
+	Misc end
+*/
+
+/*
+	Navigation bar start
+*/
+.navbar-default
+{
+	border-color: black;
+	color: white;
+	background-color: #1E2124 !important;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active:focus
+{
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active:focus
+{
+	color: white;
+	background-color: #17191C;
+}
+
+/*
+	Navigation bar end
+*/
+
+/*
+	Panel start
+*/
+.panel
+{
+	border-color: black;
+}
+
+.panel > .panel-body
+{
+	background-color: #36393E;
+}
+
+.panel > .panel-heading
+{
+	border-color: black;
+	background-color: #272B33;
+	color: white;
+}
+
+.panel > .panel-collapse > .panel-body
+{
+	background-color: #36393E;
+}
+
+/*
+	Panel end
+*/
+
+/*
+	Alert start
+*/
+.alert-danger
+{
+	background-color: rgb(255, 0, 0);
+	background-color: rgba(255, 0, 0, 0.4);
+
+	color: white;
+	border-color: black;
+}
+
+.alert-success
+{
+	background-color: rgb(0, 255, 0);
+	background-color: rgba(0, 255, 0, 0.3);
+	color: white;
+	border-color: black;
+}
+
+.alert-warning
+{
+	background-color: rgb(255, 130, 0);
+	background-color: rgba(255, 130, 0, 0.7);
+	color: white;
+	border-color: black;
+}
+
+.alert a, .panel a
+{
+	color: #A9F5F2;
+}
+/*
+	Alert end
+*/
+
+/*
+	Table start
+*/
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th
+{
+	background-color: #1E2124;
+}
+
+.table-striped > tbody > tr > td,
+.table-striped > tbody > tr > th,
+.table-striped > tfoot > tr > th,
+.table-striped > tfoot > tr > td
+{
+	border: 0;
+}
+/*
+	Table start
+*/
+
+/*
+	Button start
+*/
+.btn-default
+{
+	background-color: #181A1F;
+	color: white !important;
+	border-color: black;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active:focus
+{
+	background-color: #0E0F12;
+	color: white;
+	border-color:black;
+}
+
+.btn-upload
+{
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.btn-upload input
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	opacity: 0;
+	-ms-filter: 'alpha(opacity=0)';
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.btn-danger
+{
+	background-color: #FF0000;
+	color: white;
+	border-color: #470000;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active:focus
+{
+	background-color: #B80000;
+	color: white;
+	border-color: #470000;
+}
+
+.btn-success
+{
+	background-color: #00B800;
+	color: white !important;
+	border-color: #004000;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active:focus
+{
+	background-color: #009100;
+	color: white;
+	border-color: #004000;
+}
+
+.btn-bb
+{
+	background-color: #2C3E50;
+	color: white;
+	border-color: #19242E;
+	margin-bottom: 3px;
+	font-size: 15px;
+}
+
+.btn-bb:hover,
+.btn-bb:focus,
+.btn-bb:active:focus
+{
+	color: white;
+	background-color: #243342;
+}
+
+.btn-warning
+{
+	background-color: #FF8A00;
+	color: white;
+	border-color: black;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active
+{
+	background-color: #CC6E00;
+	border-color: black;
+}
+
+/*
+	Button end
+*/
+
+/*
+	Own styles
+	Sidebar start
+*/
+@media screen and (max-width: 767px)
+{
+	.fullsize
+	{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 991px)
+{
+	.sidebar
+	{
+		position: absolute;
+		z-index: 1 !important;
+		width: 40% !important;
+	}
+
+	.sidebarshow
+	{
+		width: 0 !important;
+	}
+
+	#showmenu
+	{
+		display: inherit;
+	}
+
+	#showmenu:focus, #showmenu:hover
+	{
+		background-color: #424549;
+	}
+}
+
+@media screen and (min-width: 992px)
+{
+	#sidebar
+	{
+		width: 15% !important;
+	}
+}
+
+#sidebar
+{
+	z-index: 1;
+    width: 15%;
+	height: 100%;
+    float: left;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    padding: 20px 0 50px 0;
+    background-color: #1E2124;
+    border: solid black;
+    border-width: 1px 1px 0 0;
+	overflow-y: auto;
+}
+
+#sidebar hr
+{
+	border-color: black;
+}
+
+#sidebar .list-group-item
+{
+    border-width: 0;
+	background-color: #1E2124;
+	color: white;
+	border-left-color: #1E2124;
+	border-left-width: 3px;
+}
+
+#sidebar .active,
+#sidebar .active:focus,
+#sidebar .active:active:focus
+{
+	background-color: #3D434F !important;
+	border-left-color: yellow !important;
+	border-left-width: 3px !important;
+}
+
+#sidebar .list-group-item:hover,
+#sidebar .list-group-item:focus,
+#sidebar .list-group-item:active:focus
+{
+	background-color: #3D434F;
+	border-left-color: white;
+	border-left-width: 3px;
+	color: white;
+}
+
+#sidebar::-webkit-scrollbar
+{
+	width: 8px;
+}
+
+#sidebar::-webkit-scrollbar-thumb
+{
+  background-color: grey;
+  border-radius: 5px;
+}
+
+/*
+	Sidebar end
+*/
+
+/*
+	blog > likes/reblog start
+*/
+.bloglikes, table.bloglikes
+{
+	margin: 7px;
+	padding: 14 0 14 23;
+}
+
+.bloglikes > tbody > tr > td
+{
+	border: 1px solid #778399;
+}
+
+table.bloglikes > tbody
+{
+	border: 0;
+}
+
+table.bloglikes > tbody > tr,
+table.bloglikes > tbody > tr
+{
+	background-color: #636D80;
+}
+
+table.bloglikes > tbody > tr > td > span,
+table.bloglikes > tbody > tr > td > span
+{
+	color: white;
+}
+
+table.bloglikes > tbody > tr > td > span > a,
+table.bloglikes > tbody > tr > td > span > a
+{
+	color: yellow;
+	font-weight: bold;
+	cursor: pointer;
+}
+/*
+	blog > likes/reblog end
+*/
+
+.avatar
+{
+	background: dimgrey;
+	width: 100%;
+
+	padding: 13px;
+	vertical-align: middle;
+	text-align: center;
+
+	border: 1px solid black;
+	border-radius: 10px !important;
+}
+
+.avatar-width
+{
+	width: 99%;
+}
+
+@media screen and (max-width: 991px)
+{
+	.avatar-width
+	{
+		width: auto;
+	}
+
+	.avatar
+	{
+		margin-bottom: 7px;
+		width: 99%;
+		margin-left: 7px;
+	}
+}
+
+.recentactivity
+{
+	border-left: 3px solid yellow !important;
+	padding: 10px;
+	background-color: #333842;
+}
+
+.upload-image
+{
+	vertical-align: top;
+	width: 100px;
+	height: 100px;
+	border: 2px solid grey;
+	margin: 3px;
+}
+
+.upload-image-selected
+{
+	border: 2px solid yellow;
+}
+
+.highlightitem
+{
+	text-decoration: none;
+}
+
+.highlightitem-yellow:hover
+{
+	border: 2px solid yellow;
+	background: #3D434F;
+}
+
+.cutofftext
+{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.cutofftextfile
+{
+	white-space: normal;
+	word-wrap: break-word;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.uploadfile { color: white !important; font-size: 50px !important; }
+
+.row-buffer-10
+{
+	padding-top: 10px;
+}
+
+.select-theme, .textarea-theme
+{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	background-color: #424549 !important;
+	color: white;
+	border-color: black;
+}
+
+.select-theme:disabled, .textarea-theme:disabled
+{
+	background-color: #5D6682 !important;
+}
+
+.user
+{
+	padding: 10px 15px;
+    margin-bottom: 20px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: #17191C;
+}
+
+@media screen and (min-width: 0px) and (max-width: 582px) {
+	.friendtile
+	{
+		width: 98%;
+	}
+}
+
+@media screen and (min-width: 583px) and (max-width: 1154px) {
+	.friendtile
+	{
+		width: 49%;
+	}
+}
+
+@media screen and (min-width: 1155px) {
+	.friendtile
+	{
+		width: 33%;
+	}
+}
+
+.friendtile
+{
+	margin-right: 3px;
+	margin-bottom: 3px;
+	border: 1px solid black;
+	height: 80px;
+	padding: 0 5px 0 5px;
+	display: inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.friendtile:hover
+{
+	border: 1px solid yellow;
+}
+
+.content
+{
+    width: 85%;
+    float: right;
+	height: 100%;
+    padding: 0 25px 40px 25px;
+}
+
+@media (max-width: 991px){
+    .content {
+        width: 100%;
+        padding: 0 0 40px 0;
+    }
+}
+
+@media (max-width: 767px) {
+	.content p
+	{
+		font-size: 11px;
+	}
+}
+
+/*
+	Live preview start
+*/
+div.live-preview
+{
+	border: 1px solid black;
+	border-left-color: #FF5600;
+	border-left-width: 5px;
+	padding: 5px 5px 13px 20px;
+}
+
+span.live-preview
+{
+	border: 2px solid green;
+	padding: 3px;
+	background-color: rgb(0, 255, 0);
+	background-color: rgba(0, 255, 0, 0.1);
+}
+
+span.live-preview-username
+{
+	background-color: rgb(120, 123, 222);
+	background-color: rgba(120, 123, 222, 0.1);
+	border: 2px solid #787bde;
+	padding: 3px;
+}
+/*
+	Live preview end
+*/
+
+/*
+	Changelog entry start
+*/
+div.changelog
+{
+	border: 1px solid black;
+	border-left-color: #FF5600;
+	border-left-width: 5px;
+	padding: 13px 5px 13px 20px;
+	margin-bottom: 5px;
+}
+
+span.changelog
+{
+	border: 2px solid green;
+	padding: 3px;
+	background-color: rgb(0, 255, 0);
+	background-color: rgba(0, 255, 0, 0.15);
+}
+
+span.changelog-username
+{
+	background-color: rgb(120, 123, 222);
+	background-color: rgba(120, 123, 222, 0.2);
+	border: 2px solid #787bde;
+	padding: 3px;
+}
+/*
+	Changelog entry end
+*/
+#addfriend
+{
+	color: white;
+	border: 0;
+	cursor: pointer;
+}
+
+li.pull-right.mutualfriend > a#addfriend,
+li.pull-right.mutualfriend,
+#addfriend + li.pull-right.mutualfriend > span,
+li.pull-right.mutualfriend:hover,
+li.pull-right.mutualfriend > a#addfriend:hover,
+#addfriend + li.pull-right.mutualfriend > span:hover
+{
+	background-color: #FF5600;
+	border: 0 !important;
+}
+
+li.pull-right.notmutualfriend > a#addfriend,
+li.pull-right.notmutualfriend,
+#addfriend + li.pull-right.notmutualfriend > span,
+li.pull-right.notmutualfriend:hover,
+li.pull-right.notmutualfriend > a#addfriend:hover,
+#addfriend + li.pull-right.notmutualfriend > span:hover
+{
+	background-color: green;
+	border: 0 !important;
+}
+
+.scrollbox
+{
+	max-height: 100%;
+	display: block;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-left: 3px;
+}
+
+.scrollbox::-webkit-scrollbar
+{
+	width: 8px;
+}
+
+.scrollbox::-webkit-scrollbar-thumb
+{
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.usersearch
+{
+	width: 99%;
+	border: 1px solid black;
+	padding: 10px;
+	padding-left: 20px;
+	margin-bottom: 3px;
+}
+
+.usersearch:hover
+{
+	background-color: #36393E;
+	border: 1px solid yellow;
+}
+
+.message
+{
+	width: 99%;
+	border: 1px solid black;
+	padding: 10px;
+	padding-left: 20px;
+	margin-bottom: 3px;
+}
+
+.message:hover
+{
+	cursor: pointer;
+	border: 1px solid yellow;
+}
+
+.messagebox
+{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border: 1px solid yellow;
+}
+
+.quote-box
+{
+	box-shadow: 2px 2px 5px #888888,
+				-2px -2px 5px #888888;
+	padding: 7px;
+	margin: 3px 3px 7px 3px;
+}
+
+.quote-quote
+{
+	margin-top: 3px;
+}
+
+.quote-by
+{
+	margin-bottom: 3px;
+	font-style: italic;
+}
+
+.showmessage
+{
+	border: 1px solid black; padding: 7px;
+}
+
+.invis
+{
+	display: none;
+}
+
+a.edit
+{
+	color: white;
+	font-size: 20px;
+}
+
+a.edit:hover
+{
+	color: yellow;
+	font-size: 20px;
+}
+
+/*
+	Items for in the blog page
+*/
+.blogtable
+{
+	max-height: 100%;
+	display: block;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-left: 3px;
+}
+
+.customblog
+{
+	overflow-x: scroll;
+	/*overflow-y: hidden;*/
+	max-height: 150px;
+	white-space: nowrap;
+}
+
+.blogblock
+{
+	margin: 5px;
+	width: 200px;
+	height: 100px;
+	border: 1px solid black;
+	display: inline-block;
+	text-align: center;
+
+	white-space: pre-line;
+	overflow: auto;
+
+	transition: border-color .2s ease-in-out;
+	transition: background-color .2s ease-in-out;
+	cursor: pointer;
+
+	color: white;
+}
+
+.blogblock:hover
+{
+	border-color: yellow;
+	background-color: #36393E;
+}
+
+.blogdate
+{
+	color: #888;
+	font-family: arial;
+}
+
+.blogname
+{
+	font-family: arial;
+}
+
+.dropdown-menu
+{
+	background-color: #1E2124;
+}
+
+.dropdown-menu > li > a
+{
+	color: white;
+	background-color: #1E2124;
+}
+
+.dropdown-menu > li > a:hover
+{
+	color: white;
+	background-color: #3D434F;
+}
+
+.gotop
+{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	line-height: normal;
+
+	border-radius: 8px !important;
+	border: 1px solid yellow;
+	color: white;
+
+	position: fixed;
+	bottom: 10;
+	right: 10;
+
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+}
+
+.gotop i
+{
+	position: relative;
+	font-size: 20;
+	top: 50%;
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.blogline
+{
+	border: none;
+	height: 3px;
+	background-color: white;
+	color: white;
+}
+
+.customblog::-webkit-scrollbar
+{
+	height: 8px;
+}
+
+.customblog::-webkit-scrollbar-thumb
+{
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.blogtable::-webkit-scrollbar
+{
+	width: 8px;
+}
+
+.blogtable::-webkit-scrollbar-thumb
+{
+  background-color: grey;
+  border-radius: 5px;
+}
